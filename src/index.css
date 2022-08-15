@@ -47,7 +47,6 @@ button:hover{
 
   background-color: transparent;
   color: rgb(90, 89, 89);
-  border: #dcdcdc 1px solid;
 }
 .today h1{
   font-size: 60px;
@@ -110,8 +109,21 @@ ul{
 
     background-color: transparent;
     color: rgb(90, 89, 89);
-    border: #dcdcdc 1px solid;
+
   }
+  .today h1{
+    font-size: 2rem;
+  }
+  .nextDay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .nextDay ul {
+    margin-top: 15px;
+   }
+
   .thermometer{
     width: auto;
     height: 100px;

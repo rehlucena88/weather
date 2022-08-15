@@ -13,7 +13,7 @@ input {
   height: 20px;
   border-radius: 10px;
   outline: none;
-  background-image: linear-gradient(120deg, blue,white);
+ background-color: transparent;
   color: #a9a9a9;
   font-size: 18px;
   padding: 5px;
@@ -36,7 +36,7 @@ button:hover{
   transition-delay: 3s;
 }
 
-.today {
+.today{
   display: flex;
   justify-content: center;
   align-items: center;;
@@ -46,7 +46,7 @@ button:hover{
   width: 800px;
 
   background-color: transparent;
-  color: #a9a9a9;
+  color: rgb(90, 89, 89);
   border: #dcdcdc 1px solid;
 }
 .today h1{
@@ -56,4 +56,76 @@ button:hover{
 .today h2,p {
   font-size: 24px;
   font-family: monospace;
+}
+
+.nextDay{
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    color: rgb(90, 89, 89);
+}
+ul{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.thermometer{
+  width: 800px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wind{
+  width: 800px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media(max-width: 420px) {
+
+  input {
+    width: 250px;
+    border-radius: 25px;
+    outline: none;
+  }
+  button {
+    width: 140px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+  .today{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    flex-direction: column;
+
+    margin-top: 30px;
+    width: 350px;
+
+    background-color: transparent;
+    color: rgb(90, 89, 89);
+    border: #dcdcdc 1px solid;
+  }
+  .thermometer{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .wind{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }

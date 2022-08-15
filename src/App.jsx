@@ -47,9 +47,11 @@ export function App() {
             <h1>{city}</h1>
           <h2>Tempo atual</h2>
           <p>
+            <ThermometerIcon/>
             {weather.temperature}
           </p>
           <p>
+            <WindIcon/>
             {weather.wind}
           </p>
           <p>
@@ -73,11 +75,11 @@ export function App() {
                         )
                        }
                     </h3>
-                    <div>
+                    <div className='thermometer'>
                       <ThermometerIcon />
                       <p>{dayForecast.temperature}</p>
                     </div>
-                    <div>
+                    <div className='wind'>
                       <WindIcon />
                       <p>{dayForecast.wind}</p>
                     </div>
